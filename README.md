@@ -25,4 +25,4 @@ User -> Route 53 -> ALB (Load Balancer) -> Auto Scaling Group (2-5 EC2) -> RDS M
 - Auto Scaling & Load Balancing
 - Fault Tolerant
 
-**Developed by: NANTHINI V**
+**Developed & Deployed by Dharshini A S**
