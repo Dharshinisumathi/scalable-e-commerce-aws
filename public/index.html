@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - E-Commerce</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search {
+      flex: 1;
+      max-width: 550px;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .cart {
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: white;
+      padding: 55px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .shop-btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 13px 25px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .hero-icon {
+      font-size: 120px;
+    }
+
+    .products {
+      padding: 40px 7%;
+    }
+
+    .products h2 {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .product-image {
+      height: 160px;
+      background: #eef2ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .add-btn {
+      width: 100%;
+      padding: 11px;
+      border: none;
+      border-radius: 7px;
+      background: #111827;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🛍️ ShopEase</div>
+
+    <input
+      class="search"
+      type="text"
+      placeholder="Search products..."
+    >
+
+    <div class="cart">🛒 Cart (0)</div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Shop Smart. Shop Easy.</h1>
+      <p>Discover quality products at affordable prices.</p>
+      <button class="shop-btn" onclick="document.getElementById('products').scrollIntoView()">
+        Shop Now
+      </button>
+    </div>
+
+    <div class="hero-icon">🛒</div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <div class="product-image">💻</div>
+        <h3>Laptop</h3>
+        <p>Powerful laptop for work and study.</p>
+        <div class="price">₹50,000</div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="product-image">📱</div>
+        <h3>Mobile</h3>
+        <p>Modern smartphone with great features.</p>
+        <div class="price">₹20,000</div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="product-image">🎧</div>
+        <h3>Headphones</h3>
+        <p>Enjoy clear and immersive audio.</p>
+        <div class="price">₹3,000</div>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ShopEase | Scalable E-Commerce on AWS</p>
+  </footer>
+
+</body>
+</html>

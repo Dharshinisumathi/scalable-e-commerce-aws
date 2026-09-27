@@ -1,0 +1,13 @@
+{
+  "name": "scalable-e-commerce-deployment",
+  "version": "1.0.0",
+  "description": "Highly available e-commerce app using ALB, Auto Scaling, RDS, CloudWatch",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}
